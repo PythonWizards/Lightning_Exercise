@@ -34,17 +34,21 @@ const employeeList = [
 
 // get the 'array' div and 'bookmark' it by saving it in a variable
 const listElement = document.getElementById('array');
-
-
 // console.log(employeeList)
-// step 1
-// listElement.innerHTML = `
-//     ${employeeList}
-// `;
 
-// Step 2
+
+// ======== Step 1 ========
+listElement.innerHTML = `
+    ${employeeList}
+`;
+
+// ======== Step 2 ========
+// console.log(employeeList[0])
+
+// ======== Step 3 ========
+// const outputElement = document.getElementById('selected_Output');
 // use the previously set variable to grab the 'array' div and use JS's .innerHTML built in function to inject HTML
-// listElement.innerHTML = `
+// outputElement.innerHTML = `
 //     <div id=${employeeList[1].id} class="card">
 //         <h3>${employeeList[1].name}</h3>
 //             <br>
@@ -56,16 +60,16 @@ const listElement = document.getElementById('array');
 //     `;
 
 
-// step 4
-    for (let i = 0; i < employeeList.length; i++) {
-        const element = employeeList[i];
-        
-        listElement.innerHTML = `
-            <div id=${employeeList[1].id} class="card">
-                <h3>Name: ${employeeList[1].name}</h3>
-                <hr>
-                <p>Title: ${employeeList[1].title}</p>
-                <p>Age: ${employeeList[1].age}</p>
-            </div>
+// ======== step 4 ========
+// const outputElement = document.getElementById('selected_Output');
+// for (let i = 0; i < employeeList.length; i++) {
+//         const loopOutput = employeeList[i];
+//         outputElement.innerHTML += `
+//             <div id=${loopOutput.id} class="card">
+//                 <h3>Name: ${loopOutput.name}</h3>
+//                 <hr>
+//                 <p>Title: ${loopOutput.title}</p>
+//                 <p>Age: ${loopOutput.age}</p>
+//             </div>
     
-    `;}
+//     `;}
