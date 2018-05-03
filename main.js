@@ -36,28 +36,25 @@ const employeeList = [
 const listElement = document.getElementById('array');
 // console.log(employeeList)
 
-
 // ======== Step 1 ========
-listElement.innerHTML = `
+console.log(employeeList.keys)
+listElement.innerHTML += `
     ${employeeList}
 `;
 
 // ======== Step 2 ========
-// console.log(employeeList[0])
+console.log(employeeList[0])
 
 // ======== Step 3 ========
-// const outputElement = document.getElementById('selected_Output');
-// use the previously set variable to grab the 'array' div and use JS's .innerHTML built in function to inject HTML
-// outputElement.innerHTML = `
-//     <div id=${employeeList[1].id} class="card">
-//         <h3>${employeeList[1].name}</h3>
-//             <br>
-//         <p>${employeeList[1].title}</p>
-//             <br>
-//         <p>${employeeList[1].age}</p>
-//             <br>
-//     </div>
-//     `;
+const outputElement = document.getElementById('selected_Output');
+outputElement.innerHTML += `
+    <div id=${employeeList[1].id} class="card">
+        <h3>${employeeList[1].name}</h3>
+            <hr>
+        <p>${employeeList[1].title}</p>
+        <p>${employeeList[1].age}</p>
+    </div>
+    `;
 
 
 // ======== step 4 ========
