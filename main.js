@@ -25,10 +25,13 @@ const employeeList = [
   },
 ];
 
-const arrayOfEmployees = document.getElementById("array");
+const listElement = document.getElementById("array");
 
-arrayOfEmployees.innerHTML = `
-    <h1>${employeeList[1].name}</h1>
-    <h1>${employeeList[1].title}</h1>
-    <h1>${employeeList[1].age}</h1>
+listElement.innerHTML = `
+    <h3>${employeeList[1].name}</h3>
+    <br>
+    <p>${employeeList[1].title}</p>
+    <br>
+    <p>${employeeList[1].age}</p>
+    <br>
     `;
