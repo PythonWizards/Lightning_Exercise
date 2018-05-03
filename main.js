@@ -35,14 +35,37 @@ const employeeList = [
 // get the 'array' div and 'bookmark' it by saving it in a variable
 const listElement = document.getElementById('array');
 
+
+// console.log(employeeList)
+// step 1
+// listElement.innerHTML = `
+//     ${employeeList}
+// `;
+
+// Step 2
 // use the previously set variable to grab the 'array' div and use JS's .innerHTML built in function to inject HTML
-listElement.innerHTML = `
-    <div id=${employeeList[1].id} class="card">
-        <h3>${employeeList[1].name}</h3>
-            <br>
-        <p>${employeeList[1].title}</p>
-            <br>
-        <p>${employeeList[1].age}</p>
-            <br>
-    </div>
-    `;
+// listElement.innerHTML = `
+//     <div id=${employeeList[1].id} class="card">
+//         <h3>${employeeList[1].name}</h3>
+//             <br>
+//         <p>${employeeList[1].title}</p>
+//             <br>
+//         <p>${employeeList[1].age}</p>
+//             <br>
+//     </div>
+//     `;
+
+
+// step 4
+    for (let i = 0; i < employeeList.length; i++) {
+        const element = employeeList[i];
+        
+        listElement.innerHTML = `
+            <div id=${employeeList[1].id} class="card">
+                <h3>Name: ${employeeList[1].name}</h3>
+                <hr>
+                <p>Title: ${employeeList[1].title}</p>
+                <p>Age: ${employeeList[1].age}</p>
+            </div>
+    
+    `;}
