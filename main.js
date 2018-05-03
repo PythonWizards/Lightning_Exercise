@@ -22,3 +22,23 @@
 
 // ======== step 4 ========
 // Print the entire Array by iteration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ------------orthogonal--------------------------
+const pureFunction = (anotherThing) => {        //|
+    console.log("I am a pure function")         //|
+    return oneThing                             //|
+}                                               //|
+// -------------------------------------------------

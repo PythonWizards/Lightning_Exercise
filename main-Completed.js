@@ -57,12 +57,12 @@ const listElement = document.getElementById('array');
 
 // ======== Step 1 ========
 // trick, we cant do this without iteration with a loop
-listElement.innerHTML += `
-    ${employeeList}
-`;
+// listElement.innerHTML += `
+//     ${employeeList}
+// `;
 
 // ======== Step 2 ========
-console.log(employeeList[0])
+// console.log(employeeList[0])
 
 // ======== Step 3 ========
 // const outputElement = document.getElementById('selected_Output');
