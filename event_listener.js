@@ -102,3 +102,19 @@ const deleteAll = event => {
   }
 };
 deleteButton.addEventListener('click', deleteAll);
+
+
+const parent = document.getElementById("parent")
+
+
+
+const clickFunction = event => {
+
+  var box = document.createElement("div");
+  box.style.width = `${Math.floor(Math.random() * 200) + 50}px`;
+  box.style.height = `${Math.floor(Math.random() * 200) + 50}px`;
+  box.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
+  parent.appendChild(box);
+}
+
+parent.addEventListener('click', clickFunction)

@@ -1,27 +1,52 @@
 // ====== Build object push to Array ======
+const employeeList = [
+    {
+      id: 2,
+      name: 'Chaz Vanderbilt',
+      title: 'High Roller',
+      age: '26',
+    },
+    {
+      id: 5,
+      name: 'John Dulaney',
+      title: 'Lowly Developer',
+      age: '29',
+    },
+    {
+      id: 9,
+      name: 'Chris Miller',
+      title: 'Wizard',
+      age: '32',
+    },
+    {
+      id: 1,
+      name: 'Chazzette Belmont',
+      title: 'CEO',
+      age: '30',
+    },
+  ];
+  // ======== step 4 ========
+  // Print the entire Array by iteration
+  const arrayElement = document.getElementById('array')
+  for (let i = 0; i < employeeList.length; i++) {
+      const employee = employeeList[i];
+      arrayElement.innerHTML += `
+        <div id="${employee.id}" class="card">
+                <h3>Name: ${employee.name}</h3>
+                    <hr>
+                <p>Title: ${employee.title}</p>
+                <p>Age: ${employee.age}</p>
+        </div>
+        `
+  }
+    
 
 
 
-// Array of employees set in Keyless objects
-// Each Object in the array has the following information. They all are strings except the Id:
-        // id: integer
-        // name: string
-        // title: string
-        // age: string
 
-// get the 'array' div and 'bookmark' it by saving it in a variable
 
-// ======== Step 1 ========
-// Print Array to console. Print a single array object to Console
 
-// ======== Step 2 ========
-// Print Array to DOM * 
 
-// ======== Step 3 ========
-// print a single object from the array to the DOM
-
-// ======== step 4 ========
-// Print the entire Array by iteration
 
 
 
@@ -39,6 +64,6 @@
 // ------------orthogonal--------------------------
 const pureFunction = (anotherThing) => {        //|
     console.log("I am a pure function")         //|
-    return oneThing                             //|
+    return ("I also only return one thing")     //|
 }                                               //|
 // -------------------------------------------------

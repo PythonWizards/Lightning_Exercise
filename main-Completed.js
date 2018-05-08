@@ -81,11 +81,6 @@ const outputElement = document.getElementById('selected_Output');
 for (let i = 0; i < employeeList.length; i++) {
         const loopOutput = employeeList[i];
         outputElement.innerHTML += `
-            <div id="${loopOutput.id}" class="card">
-                <h3>Name: ${loopOutput.name}</h3>
-                <hr>
-                <p>Title: ${loopOutput.title}</p>
-                <p>Age: ${loopOutput.age}</p>
-            </div>
+              
     
     `;}
