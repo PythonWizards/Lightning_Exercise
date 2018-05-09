@@ -1,7 +1,8 @@
+// This is not meant for future NSS student consumption.  It is the innerworkings of doing everything possible to avoid hard coding.
 const slideThatWeAreCurrentlyOn = document.querySelectorAll('#slides .slide');
 
 const getData = () => {
-  fetch('./factory.json')
+  fetch('./data/factory.json')
     .then(
       (r = response => {
         if (response.status !== 200) {
@@ -25,11 +26,12 @@ const getData = () => {
 
 getData()
 
+
 const dom = data => {
-    slideThatWeAreCurrentlyOn.forEach(r = () => {
+    slideThatWeAreCurrentlyOn.forEach(r => {
         console.log(r.title)
         r.innerHtml = `
-        <h1>${r.title}</h1>
+        <h1>${data.title}</h1>
         `
     })
 }
