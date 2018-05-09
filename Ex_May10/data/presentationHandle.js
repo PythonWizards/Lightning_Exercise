@@ -27,6 +27,7 @@ const getData = () => {
 getData()
 
 
+
 const dom = data => {
     slideThatWeAreCurrentlyOn.forEach(r => {
         console.log(r.title)

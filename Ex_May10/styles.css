@@ -6,6 +6,16 @@
   list-style-type: none;
 }
 
+.main_title {
+    text-align: center;
+    font-size: 5em;
+    padding-top: 270px;
+}
+.main_content {
+    text-align: center;
+    font-size: 2em;
+}
+
 .slide {
   position: absolute;
   left: 0px;
@@ -14,8 +24,8 @@
   height: 100%;
   opacity: 0;
   z-index: 1;
-  background-color: darkgrey;
-  color: whitesmoke;
+  background-color: white;
+  color: black;
 
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
