@@ -14,6 +14,8 @@
   height: 100%;
   opacity: 0;
   z-index: 1;
+  background-color: darkgrey;
+  color: whitesmoke;
 
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;

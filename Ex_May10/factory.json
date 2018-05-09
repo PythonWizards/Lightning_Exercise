@@ -1,0 +1,40 @@
+{
+    "slide1": {
+        "title": "Navigating the Machine",
+        "content": "Nashville Software School"
+    },
+    
+    "slide2": {
+        "title": "Opening Applications Quickly", 
+        "content": "• If you are on a Mac: Use Command(⌘) + SpaceBar. Begin typing the name of the application, when you see the app appear hit enter. Time saved with shortcuts adds up.",
+        "content2": "• If you are on a PC: Hit the Windows key. Begin typing the name of the application. As with the Mac, hit enter when you see thedesired app pop up."
+    },
+    "slide3": {
+        "title": "Essential Applications", 
+        "content": "• Visual Studio Code: We will use this editor extensively at NSS. There are a myriad of other editors, but none come close to the capabilites and extensions that VSC boasts.",
+        "content2": "• Google Chrome or Mozilla Firefox: Pick your poison, both come with GREAT developer tools. You will use these tools to inspect your application guts and all, maybe you'll even find a bug or two. 🐛" 
+    },
+    "slide4": {
+        "title": "Essential Websites", 
+        "content": "• Github: Make an account, get used to navigating around github and looking at code. You can follow other users and iew their work as well. This is instrumental in the learing process.",
+        "content2": "• Slack: Install the app straight onto your machine. Make sure you're in the NSS channel, then type :yay: into general."
+    },
+    "slide5": {
+        "title": "Finally, The Terminal", 
+        "content": "• Your computer is immensely powerful, but you would never know that with all the clicking and mouse-dependant navigation you've picked up over the years. Luckily we have direct access to the heart of the machine. Hit CMD+Spacebar (windows key) and type 'Terminal' ('Command' or just 'cmd' for windows users)",
+        "content2": "• Bazinga! We now have a portal to the inner workings of the computer. You can now look like a hacker in public."
+    },
+    "slide6": {
+        "title": "Essential Commands", 
+        "content": "• Now that you're in, how do we navigate? Well we have several commands that handle that. When you initially open terminal, you will be placed into a directory on youre machine, for Macs, its generally know as the root directory, denoted by simply '~'. Windows opens in the User directory of your account.",
+        "content2": "• Now we will step deeper into the Directory. But how do we know where to go? Type 'ls' and hit enter. You should see a bunch of files and directories pop up. These are all the places we can go. Type 'cd Desktop' and hit enter. You just 'changed directory' to the desktop. Now you have direct access to the files on your desktop. "
+    },
+    "slide7": {
+        "title": "Essential Commands", 
+        "content": "• Now that we've moved down, how do we move out? simple. Type 'cd ..'. Yes, 2 dots. You should see you are now back in the previous directory! You will comme to know file structure with time. Dont get too bogged down in the syntax, just try to understand a high level look at what you're trying to accomplish.",
+        "content2": "• 'cd' - You can create files  with the 'touch' command (Usage: 'touch filename.html').",
+        "content3": "• 'mkdir' - You can create new Directories with the 'mkdir' command (Usage: 'mkdir newDirectory').",
+        "content4": "• 'mv' - You can move files and directories around with 'mv' (usage: 'mv path/to/whereTheFileExists path/to/filesNewLocation').",
+        "content5": "• 'rm -rf' - You can remove files and directories around with 'rm-rf' (usage: 'rm -rf fileToDelete'). Disclaimer: YOu can really screw up your computer if you delete the wrong thing. Use this with extreme caution."
+    }
+}
