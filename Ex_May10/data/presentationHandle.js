@@ -4,8 +4,7 @@ const Content = document.getElementsByClassName('main_content')[0];
 
 // axios Plugin method
 axios.get('./data/factory.json')
-.then(r = response => {
-  console.log(response.data.slide1);
+.then(response => {
   dom(response)
 })
 .catch(function(error) {
@@ -15,7 +14,6 @@ axios.get('./data/factory.json')
 // function that prints to First title slide
 const dom = response => {
   const lazy = response.data.slide1
-  console.log(lazy);
   Title.innerHTML = `
     ${lazy.title}
   `;
